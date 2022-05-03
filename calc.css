@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
 }
 .title{
     color: white;
