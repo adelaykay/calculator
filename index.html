@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculathor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calculator">
+        <table>
+            <tt class="title">Calculator</tt>
+            <tr colspan="1"><input id ="calcDisplay" value="0" disabled></tr>
+            <tr>
+                <td><input class="btn btn-colored" type="button" value= "C" onclick="clearDisplay()"></td>
+                <td><input class="btn" type="button" value= "<" onclick="backspace()"></td>
+                <td><input class="btn" id ="divide" type="button" value= "/"></td>
+                <td><input class="btn" id ="multiply" type="button" value= "x"></td>    
+            </tr>
+            <tr>
+                <td><input class="btn" type="button" value= "7" onclick="sendToDisplay(7)"></td>
+                <td><input class="btn" type="button" value= "8" onclick="sendToDisplay(8)"></td>
+                <td><input class="btn" type="button" value= "9" onclick="sendToDisplay(9)"></td>
+                <td><input class="btn" id ="subtract" type="button" value= "-"></td>
+            </tr>
+            <tr>
+                <td><input class="btn" type="button" value= "4" onclick="sendToDisplay(4)"></td>
+                <td><input class="btn" type="button" value= "5" onclick="sendToDisplay(5)"></td>
+                <td><input class="btn" type="button" value= "6" onclick="sendToDisplay(6)"></td>
+                <td rowspan="2"><input class="btn plusButton btn-colored" id ="add" type="button" value= "+"></td>
+            </tr>
+            <tr>
+                <td><input class="btn" type="button" value= "1" onclick="sendToDisplay(1)"></td>
+                <td><input class="btn" type="button" value= "2" onclick="sendToDisplay(2)"></td>
+                <td><input class="btn" type="button" value= "3" onclick="sendToDisplay(3)"></td>
+                
+            </tr>
+            <tr>
+                <td><input class="btn" type="button" value= "." onclick="point()"></td>
+                <td><input class="btn" type="button" value= "0" onclick="sendToDisplay(0)"></td>
+                <td><input class="btn" type="button" value="+/-" onclick="negate()"></td>
+                <td><input class="btn" type="button" value= "=" onclick="equals()"></td>                
+            </tr>
+            
+        </table>    
+
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
