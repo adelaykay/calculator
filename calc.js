@@ -6,9 +6,16 @@ let multiplication = document.getElementById("multiply");
 let firstOperand;
 let swtch=0;
 let result;
+// console.log(firstOperand);
 
 
 const operation = (symbol) => {
+    if (firstOperand!=undefined){
+        display.value = firstOperand + calc + display.value;
+        // console.log(display.value)
+        display.value = eval(display.value);
+        result = display.value;
+    }
     firstOperand = display.value;
     calc = symbol;
     // console.log(calc, firstOperand);
