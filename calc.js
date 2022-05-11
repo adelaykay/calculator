@@ -6,7 +6,6 @@ let multiplication = document.getElementById("multiply");
 let firstOperand;
 let swtch=0;
 let result;
-// console.log(firstOperand);
 
 
 const operation = (symbol) => {
