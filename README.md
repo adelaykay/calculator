@@ -1,4 +1,4 @@
-# calc.github.io
+# adelaykay.github.io/calc
 
 A simple calculator.
 
